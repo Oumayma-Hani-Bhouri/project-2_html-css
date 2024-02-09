@@ -20,20 +20,17 @@
     box-sizing: border-box;  
 }
 
-
 header {
     height: 79px;
+    display: flex;
+    justify-content: space-between;
+    align-items: normal;
 }
 
-nav {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-    
-  }
-
 /****** Logo Booki ***********/
+.logo {
+    padding: 44px,0;
+}
 
 .logo img { 
     width : 61,09px;
@@ -43,7 +40,6 @@ nav {
 
   }
   
-
 /****** hebergements et Activités ***********/
 .menu {
     display:inline-flex;
@@ -51,10 +47,10 @@ nav {
     gap: 68px;
     left: 1096px;
     align-items:normal;
- 
+   
     }
 
-  a {
+  .menu a {
     color: #000000;
     text-decoration: none;
     font-family: Raleway;
@@ -69,11 +65,12 @@ nav {
    
     }
 
-  a:hover {
+  .menu a:hover {
 
     color:rgba(0, 101, 252, 1);
     border-top: solid 2px rgba(0, 101, 252, 1);
     line-height: 19px;
+    
    
     }
 /****** headline ***********/
