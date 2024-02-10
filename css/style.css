@@ -205,7 +205,7 @@ span {
     font-style: normal;
 }
 
-h2 {
+.filter-bar h2 {
     display: inline-block;
     border-radius: 25px;
     border: 2px solid #D9D9D9;
@@ -215,7 +215,7 @@ h2 {
     width:173px;
     height: 48px;
 }
-h3 {
+.filter-bar h3 {
     display: inline-block;
     border-radius: 25px;
     border: 2px solid #D9D9D9;
@@ -225,7 +225,7 @@ h3 {
     height: 48px;
     width:134px;
 }
-h4 {  
+.filter-bar h4 {  
     display: inline-block;
     border-radius: 25px;
     border: 2px solid #D9D9D9;
@@ -236,7 +236,7 @@ h4 {
     width:170px;
 
 }
-h5 {
+.filter-bar h5 {
     display: inline-block;
     border-radius: 25px;
     border: 2px solid #D9D9D9;
@@ -267,11 +267,11 @@ h5 {
     margin-bottom: 15px;
     margin-left: 19px;
     width: 22px;
-    
+
 
 }
 
-h2:hover , h3:hover , h4:hover , h5:hover {
+.filter-bar h2:hover , h3:hover , h4:hover , h5:hover {
     background: linear-gradient(0deg, #DEEBFF, #DEEBFF);  
 }
 
