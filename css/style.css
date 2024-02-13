@@ -23,18 +23,15 @@
 header { 
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
-    padding-bottom: 30px;
-
+    margin-top: 19px;
 }
 
 /****** Logo Booki ***********/
+.logo {
 
-.logo { 
-    padding-top: 30px;  
+    margin-top: 11px;
 }
-
 .logo img { 
     height : 19px; 
 }
@@ -44,16 +41,16 @@ header {
 .menu { 
     display: flex;
     justify-content: space-between; 
-    margin-top: 15px;
-}
+    align-items: center;
+     }
 
  .menu a {
     color: #000000;
     text-decoration: none;
     font-size: 16px;
     border-top: solid 2px white; 
-    padding-top: 15px ;
     margin-left: 68px;
+    padding-top: 17px;
 }
 
 .menu a:hover {
@@ -63,9 +60,10 @@ header {
 
 /****** headline ***********/
 .headline {
+    margin-top: 30px;
     margin-bottom: 35px;
 }
-.headline h1 {
+.headline h2 {
     font-size: 22px;
 }
 .headline p {
@@ -75,12 +73,10 @@ header {
 
 .search-bar { 
     display: flex;
-    margin-bottom: 35px;
 }
 
 .form-container {
     display: flex;
-    flex-direction: row;
     overflow: hidden;
     border-radius: 15px;
     height:49px;
@@ -101,7 +97,7 @@ header {
 }
 .form-input {
     display: flex;
-
+    
 }
 
 .form-input input {
@@ -111,17 +107,17 @@ header {
     border: none;
     outline: none;
     text-align:center;
+   
 }
-
 .form-submit button {
     height:100%;
     display: flex;
-    flex-direction: row;
     align-items: center;
     padding: 14px 16px;
     background: #0065FC;
     border: 1px solid #0065FC;
     cursor: pointer;
+
 }
 
 span {
@@ -140,11 +136,12 @@ span {
 
 .filter-bar {
     display: flex;
+    margin-top: 20px;
     margin-bottom: 20px;
     align-items: center;
 }
 
-.filter-bar h2 {
+.filter-bar h3 {
    font-size: 18px;
    font-weight: 700;
    line-height: 21px;
@@ -208,6 +205,7 @@ span {
 .info-bar p {
     font-size: 16px;
     }
+
 
 
 
