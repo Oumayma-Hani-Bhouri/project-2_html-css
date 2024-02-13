@@ -24,13 +24,13 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 19px;
+    margin-top:15px;
 }
 
 /****** Logo Booki ***********/
 .logo {
 
-    margin-top: 11px;
+    margin-top:0px;
 }
 .logo img { 
     height : 19px; 
@@ -50,7 +50,8 @@ header {
     font-size: 16px;
     border-top: solid 2px white; 
     margin-left: 68px;
-    padding-top: 17px;
+    padding-top: 21px;
+  
 }
 
 .menu a:hover {
@@ -69,7 +70,7 @@ header {
 .headline p {
     font-size: 16px;
 }
-/****** formulaire de recherche ***********/
+/****** search bar ***********/
 
 .search-bar { 
     display: flex;
@@ -97,7 +98,6 @@ header {
 }
 .form-input {
     display: flex;
-    
 }
 
 .form-input input {
@@ -107,17 +107,16 @@ header {
     border: none;
     outline: none;
     text-align:center;
+    padding: 0px;
    
 }
 .form-submit button {
     height:100%;
     display: flex;
     align-items: center;
-    padding: 14px 16px;
     background: #0065FC;
     border: 1px solid #0065FC;
     cursor: pointer;
-
 }
 
 span {
@@ -152,18 +151,13 @@ span {
     flex-direction:row;
     padding-left: 15px;
     gap:15px;
-
 }
 
 .filter-bar li  {
     display: flex;
     border-radius:25px;
     border: 2px solid #D9D9D9;
-    padding-left: 16px ;
-    padding-right:16px;
-    padding-bottom: 12px;
-    padding-top: 12px;
- 
+    padding: 10px 16px;
 }
 .filter-bar a {
     font-size: 17px;
@@ -212,7 +206,7 @@ span {
 body {
     display: flex;
     justify-content: center;
-    margin-top: 0px;
+ 
 }
 
 
