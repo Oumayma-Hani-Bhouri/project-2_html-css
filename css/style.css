@@ -12,9 +12,6 @@
 .fa-solid {
     color: var(--main-color);
 }
-body {
-    margin-top: 0px;
-}
 
 .main-container {
     width: 100%;
@@ -22,13 +19,13 @@ body {
     padding: 0 50px;
     box-sizing: border-box;  
 }
-
+/******  Header ***********/
 header { 
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: space-between;
-padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 30px;
 
 }
 
@@ -40,7 +37,6 @@ padding-bottom: 30px;
 
 .logo img { 
     height : 19px; 
-    
 }
   
 /****** menu hebergements et activites ***********/s
@@ -48,61 +44,46 @@ padding-bottom: 30px;
 .menu { 
     display: flex;
     justify-content: space-between; 
-   margin-top: 15px;
+    margin-top: 15px;
 }
 
  .menu a {
     color: #000000;
     text-decoration: none;
     font-size: 16px;
-    box-sizing: content-box;
     border-top: solid 2px white; 
     padding-top: 15px ;
     margin-left: 68px;
-
 }
 
-nav a:hover {
+.menu a:hover {
     color:rgba(0, 101, 252, 1);
     border-top: solid 2px rgba(0, 101, 252, 1);
 }
 
 /****** headline ***********/
 .headline {
-    height:  53px;
-    gap: 8px;
-    margin-top: 30px;
-
+    margin-bottom: 35px;
 }
 .headline h1 {
-    
     font-size: 22px;
-    text-align: left; 
 }
 .headline p {
-  
     font-size: 16px;
-    text-align: left;
-
 }
 /****** formulaire de recherche ***********/
 
 .search-bar { 
     display: flex;
-    width: 377px;
-    height: 49px;
-    margin-top: 35px;
+    margin-bottom: 35px;
 }
 
 .form-container {
     display: flex;
     flex-direction: row;
     overflow: hidden;
-    height: 49px;
     border-radius: 15px;
     border: 1px solid #F2F2F2 ;
-    gap: 24px;
-    align-items: center;  
 }
 
 .form-icon  {
@@ -133,6 +114,7 @@ nav a:hover {
     text-align: center;
     border: none;
     outline: none;
+    
 }
 
 .form-submit button {
@@ -176,7 +158,6 @@ span {
     flex-direction:row;
     align-items: center;
     gap: 15px;
-    margin-top: 35px;
     margin-bottom: 35px;
     justify-content: space-between;
 }
@@ -304,6 +285,7 @@ span {
 body {
     display: flex;
     justify-content: center;
+    margin-top: 0px;
 }
 
 
