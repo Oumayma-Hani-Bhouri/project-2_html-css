@@ -30,9 +30,9 @@
         </h1>
 
         <nav class="menu">
-          <a href="#hebergements"> Hébergements </a>
+          <a href="#hebergements-section"> Hébergements </a>
 
-          <a href="#activities"> Activités </a>
+          <a href="#activities-section"> Activités </a>
         </nav>
       </header>
 
@@ -43,7 +43,7 @@
           <p>En plein centre-ville ou en pleine nature</p>
         </section>
 
-        <section class="search">
+        <section>
           <form class="form-container" id="recherche" action="#" method="get">
            
               <label for="search-bar">
@@ -58,13 +58,12 @@
                   name="Recherche"
                   placeholder="Marseille, France"
                 />
-
-              <div class="form-submit">
-                <button>
-                  <div class="form-submit-text"> Rechercher </div>
+                <button class="form-submit-text" >
+                   Rechercher
+                </button>
+                <button class="form-submit-icon">
                   <i class="fa-solid fa-magnifying-glass"> </i>
                 </button>
-              </div>
           </form>
         </section>
 
@@ -98,7 +97,7 @@
 
 
         <section class="hebergements-and-populaires">
-          <section class="hebergements">
+          <section class="hebergements" id="hebergements-section">
             <div class="hebegements-title">
              <h2 class="section-title">  Hébergements à Marseille  </h2>
             </div>
@@ -204,6 +203,7 @@
                 </a>
               </article>
              <article class="card">
+                <a href="#"> 
                 <img src="./images/hebergements/marcus-loke.jpg"
                 alt="Image de la chambre d'hôtel montrant deux lits superposés" />
                <div class="card-content">
@@ -226,7 +226,8 @@
                 </div>
                 </a>
               </article>
-             <article class="card">    <a href="#"> 
+             <article class="card">  
+                  <a href="#"> 
                 <img src="./images/hebergements/nicate-lee.jpg"
                 alt="Image de la chambre d'hôtel montrant quatre lits superposés" />
                 <div class="card-content">
@@ -339,13 +340,15 @@
             </div>
           </section>
         </section>
-        <section class="activities">
+        <section class="activities" id="activities-section">
 
             <div class="activities-title">
               <h2 class="section-title"> Activités à Marseille </h2>
             </div>
             <div class="activities-cards">
+                
                 <article class="card">
+                    <a href="#">
                   <img
                     src="images/activites/reno-laithienne.jpg"
                     alt="image montrant le port" />
@@ -353,8 +356,11 @@
                   <div class="card-content">
                     <h3 class="card-title"> Vieux-Port </h3>
                   </div>
+                    </a>
                 </article>
+                
                 <article class="card">
+                    <a href="#">
                     <img
                       src="images/activites/paul-hermann.jpg"
                       alt="image montrant le Fort" />
@@ -362,8 +368,12 @@
                     <div class="card-content">
                       <h3 class="card-title"> Fort de Pomègues </h3>
                     </div>
+                    </a>
                   </article>
+             
+           
                   <article class="card">
+                    <a href="#">
                     <img
                       src="images/activites/kilyan-sockalingum.jpg"
                       alt="image montrant la mer et les montagnes" />
@@ -371,22 +381,35 @@
                     <div class="card-content">
                       <h3 class="card-title"> Parc national des Calanques </h3>
                     </div>
+                    </a>
                   </article>
-        
+              
+             
                   <article class="card">
-                    <img
-                      src="images/activites/florian-wehde.jpg"
+                    <a href="#">
+
+                     <img 
+                     src="images/activites/florian-wehde.jpg"
                       alt="image montrant la ville " />
   
                     <div class="card-content">
                       <h3 class="card-title"> Notre-Dame-de-la-Garde </h3>
                     </div>
+                    </a> 
                   </article>
+            
             </div>
         </section>
       </main>
+      <footer>
 
-      <footer></footer>
+
+
+
+
+
+        
+      </footer>
     </div>
   </body>
 </html>

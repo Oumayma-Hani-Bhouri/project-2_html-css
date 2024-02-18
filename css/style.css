@@ -12,21 +12,55 @@
 .fa-solid {
     color: var(--main-color);
 }
+/****** body ***********/
 
+body {
+    display: flex;
+    justify-content: center;
+}
 .main-container {
     width: 100%;
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;  
 }
+
+.section-title {
+    margin: 0;
+    font-size: 22px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.card img {
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 16px;
+}
+
+.euro {
+    font-weight: 700;
+}
+
+.neutralStar {
+    color: var(--main-bg-color)
+}
+
+
 /******  Header ***********/
 header { 
     height: 79px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top:14px;
- 
+    padding-top:14px;
 }
 
 /****** Logo Booki ***********/
@@ -34,6 +68,7 @@ header .logo {
     display: flex ;
     margin-top: 0px;
 }
+
 header .logo img { 
     width:61px;
     height: 19px;
@@ -43,9 +78,9 @@ header .logo img {
 
 header .menu { 
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-
+    justify-content: flex-end;
      }
 
  header .menu a {
@@ -55,8 +90,7 @@ header .menu {
     box-sizing: border-box;
     border-top: solid 2px white; 
     padding-top: 20px;
-    margin-left:68px ;
-    
+    margin-left:68px ; 
 }
 
 header .menu a:hover {
@@ -79,11 +113,6 @@ header .menu a:hover {
     margin: 5px;
 }
 /****** search bar ***********/
-
-.search { 
-    display: flex;
-
-}
 
 .form-container  {
     display: flex;
@@ -118,10 +147,10 @@ header .menu a:hover {
     font-weight: 700;
     font-size: 18px;
     box-sizing: border-box;
-    padding: 0px,24px,0px,24px ;
+    padding: 0px,24px ;
     color: black;
     border: none;
-    text-align: center;
+    text-align:center;
   
 }
 #search-bar::placeholder {
@@ -129,28 +158,22 @@ header .menu a:hover {
     font-size: 18px;
     font-weight: 700;
 }
-.form-submit button {
+.form-container .form-submit-text {
     height:49px;
-    width: 132px;
+    width: 113px;
     display: flex;
     align-items: center;
     border-radius: 0 15px 15px 0;
     background: #0065FC;
     border: 1px solid #0065FC;
     cursor: pointer;
-    justify-content: center;
     padding: 15px,16px;
-}
-
-.form-submit .form-submit-text {
     font-weight: 700;
     font-size: 18px;
-    color:rgba(255, 255, 255, 1);
+    color: #F2F2F2;
 }
 
-.form-submit i {
-    width: 17px;
-    color: white;
+.form-container .form-submit-icon {
     display:none;
 }
 
@@ -160,7 +183,8 @@ header .menu a:hover {
     display: flex;
     margin-top: 20px;
     margin-bottom: 20px;
-    align-items: center;
+    align-items: center;.
+ 
 }
 
 .filter-bar h3 {
@@ -172,6 +196,7 @@ header .menu a:hover {
 .filter-bar ul {
     display: flex;
     flex-direction:row;
+    justify-content: space-between;
     padding-left: 15px;
 }
 
@@ -208,10 +233,10 @@ header .menu a:hover {
     margin-bottom: 35px;
 }
 
-.info-icon  {
+.info-bar .info-icon  {
     display: flex;
     width: 24px;
-    height: 24px;
+    height: 100%;
     border: 1px solid rgba(217, 217, 217, 1);
     border-radius: 100px; 
     justify-content: center;
@@ -223,40 +248,6 @@ header .menu a:hover {
     font-size: 16px;
     }
 
-/****** body ***********/
-
-body {
-    display: flex;
-    justify-content: center;
-}
-
-.section-title {
-    margin: 0;
-    font-size: 22px;
-}
-
-.card {
-    background-color: white;
-    border-radius: 20px;
-    padding: 5px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-}
-
-.card img {
-    object-fit: cover;
-}
-
-.card-title {
-    font-size: 16px;
-}
-
-.euro {
-    font-weight: 700;
-}
-
-.neutralStar {
-    color: var(--main-bg-color)
-}
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
@@ -293,10 +284,9 @@ body {
     display: flex;
     flex-direction: column;
     margin-top: 33px;
-  
 }
 
-.card a { 
+.hebergements-cards .card a { 
     color: rgba(0, 0, 0, 1);
     text-decoration: none;
 }
@@ -388,25 +378,22 @@ body {
     margin-bottom: 7px;
 }
 /****** Activités ***********/
-.activities section {
-        width: 100%;
-        background-color: var(--main-bg-color);
+section .activities {
+       display: flex;
+       flex-direction: column;
+        margin-bottom: 35px;
         padding: 35px;
-        box-sizing: border-box;
-    
     }
 
 .activities-title {
         display: flex;
-         margin:30px;
+        margin: 30px;
 }
 .activities-cards {
     display: flex;
      flex-direction: row ;
     justify-content: space-between;
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-bottom: 30px;
+    margin:30px;
   
 }
 .activities-cards .card { 
@@ -414,8 +401,12 @@ body {
     flex-direction: column;
     width:288px;
 }
-
+.activities-cards .card a { 
+    color: rgba(0, 0, 0, 1);
+    text-decoration: none;
+}
 .activities-cards img {
+    width: 100%;
     height: 375px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -430,7 +421,14 @@ body {
 
 .activities-cards .card-title {
     margin-top: 20px;
-    margin-bottom: 15px;}
+    margin-bottom: 15px;
+}
+/****** footer ***********/
+
+
+
+
+
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
