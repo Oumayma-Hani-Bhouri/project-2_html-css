@@ -187,6 +187,7 @@ input::placeholder {
   flex-direction: row;
   justify-content: space-between;
   padding-left: 15px;
+
 }
 
 .filter-bar li {
@@ -357,44 +358,43 @@ input::placeholder {
 
 }
 /****** Activités ***********/
-section .activities {
-  display: flex;
-  flex-direction: column;
+.activities {
+  width: 95%;
   margin-top: 35px;
   margin-bottom: 35px;
-  
 }
 
 .activities-title {
   display: flex;
-  margin: 30px;
+  margin-left: 30px;
   padding-top: 30px;
 }
-.activities-cards {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.activities-cards   {
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   margin: 30px;
   padding-bottom: 30px;
+  gap:30px;
+
 }
-.activities-cards .card {
+.activities-cards  .card {
   display: flex;
   flex-direction: column;
-  width: 288px;
 }
 
 .activities-cards img {
-  width: 100%;
-  height: 375px;
+ 
+  width:100%;
+  height: 380px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
 .activities-cards .card-content {
-  height: 54px;
   display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
+  align-items: center;
   padding-left: 14px;
+
 }
 
 .activities-cards .card-title {
