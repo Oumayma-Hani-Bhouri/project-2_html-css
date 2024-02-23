@@ -23,16 +23,19 @@
   <body>
     <div class="main-container">
       <header>
-        <div class="logo">
-          <a href="index.html">
+        <div class="logo" >
+          <a href="index.html" >
+          
             <img src="./images/logo/Booki.png " alt="Logo-du-site" />
           </a>
         </div>
-
         <nav class="menu">
-          <a href="#hebergements-section"> Hébergements </a>
-
-          <a href="#activities-section"> Activités </a>
+            <div class="heberg">
+          <a href="#hebergements-section"  > Hébergements </a>
+        </div>
+        <div class="activi">
+          <a href="#activities-section" > Activités </a>
+        </div>
         </nav>
       </header>
 
@@ -44,7 +47,8 @@
         </section>
 
         <section>
-          <form class="form-container">
+          <form id="recherche" action="#" method="get"  >
+            <div class="form-container" >
             <label for="search-bar">
               <div class="form-icon">
                 <i class="fa-solid fa-location-dot"> </i>
@@ -60,7 +64,9 @@
             <button class="form-submit-icon">
               <i class="fa-solid fa-magnifying-glass"> </i>
             </button>
+        </div>
           </form>
+
         </section>
 
         <section class="filter-bar">
