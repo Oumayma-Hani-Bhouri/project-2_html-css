@@ -67,6 +67,7 @@ header {
 }
 
 header  img {
+    height:19px;
     width: 61px;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -146,18 +147,21 @@ header .menu a:hover {
   font-weight: 700;
 }
 .form-container .form-submit-text {
+  width:132px;
   height: 49px;
   display: flex;
   align-items: center;
   border-radius: 0px 15px 15px 0px;
-  background: #0065fc;
-  border: 1px solid #0065fc;
+  background: var(--main-color, #0065FC);
+  border: 1px solid var(--main-color, #0065FC);
   cursor: pointer;
   padding: 15px 16px;
-  font-weight: 700;
-  font-size: 18px;
-  color: #f2f2f2;
-  width:132px;
+}
+
+.form-submit-text span {
+    font-weight:700;
+    font-size: 18px;
+    color: var(--White, #FFF);
 }
 
 .form-container .form-submit-icon {
@@ -572,8 +576,8 @@ header .menu a:hover {
     display: flex;
     align-items: center;
     border-radius: 15px;
-    background: #0065fc;
-    border: 2px solid #0065fc;
+    background: var(--main-color, #0065FC);
+    border: 2px solid var(--main-color, #0065FC);
     border-left: none;
     cursor: pointer;
     padding: 15px 16px;
