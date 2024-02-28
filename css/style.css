@@ -177,7 +177,8 @@ header .menu a:hover {
 .filter-bar {
   display: flex;
   margin-top: 15px;
-  margin-bottom: 5px;  align-items: center;
+  margin-bottom: 5px;
+  align-items: center;
 }
 
 .filter-bar h2 {
@@ -197,7 +198,7 @@ li {
     box-sizing: border-box;
     padding: 4px 16px  ;
     border-radius: 25px;
-    border: 2px solid #d9d9d9;
+    border: 2px solid  #D9D9D9;
 }
 
 .filter {
@@ -219,7 +220,7 @@ li {
 }
 
 .filter-bar li:hover {
-  background: linear-gradient(0deg, #deebff, #deebff);
+  background: var( --filter-bg-color, #DEEBFF);
 }
 
 /****** info bar ***********/
@@ -648,7 +649,7 @@ header .menu a:hover {
   .hebergements-and-populaires .hebergements {
     width: 100%;
     padding: 20px 20px 0 20px;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: white;
   }
 
   .hebergements-cards {
