@@ -114,9 +114,9 @@ header .menu a:hover {
   width:377px;
   height: 49px;
   box-sizing: border-box;
-  border: 1px solid var(--Grey, #f2f2f2);
+  border: 1px solid var(--main-bg-color);
   border-radius: 15px;
-  background: var(--White, #FFF);
+  background: white;
   overflow: hidden;
 }
 
@@ -124,7 +124,7 @@ header .menu a:hover {
   height: 49px;
   width: 50px;
   display: flex;
-  background: #f2f2f2;
+  background: var(--main-bg-color) ;
   align-items: center;
   justify-content: center;
   color: #000;
@@ -137,8 +137,9 @@ header .menu a:hover {
   font-weight: 700;
   font-size: 18px;
   outline: none;
-  border: 1px solid var(--Grey, #f2f2f2);
+  border: 1px solid var(--main-bg-color);
   text-align: center;
+  background-color: white ;
 }
 
 ::placeholder {
@@ -151,13 +152,13 @@ header .menu a:hover {
   display: flex;
   align-items: center;
   border-radius: 0px 15px 15px 0px;
-  background: #0065fc;
-  border: 1px solid #0065fc;
+  background: var(--main-color) ;
+  border: 1px solid var(--main-color);
   cursor: pointer;
   padding: 15px 16px;
   font-weight: 700;
   font-size: 18px;
-  color: #f2f2f2;
+  color: white ;
   width:132px;
 }
 
@@ -165,7 +166,7 @@ header .menu a:hover {
   display: none;
 }
 .form-container .form-submit-icon i {
-  color: var(--White, #fff);
+  color: white;
   width: 17px;
   height: 17px;
 }
@@ -173,8 +174,9 @@ header .menu a:hover {
 /****** filter bar ***********/
 .filter-bar {
   display: flex;
+  align-items: center;
   margin-top: 15px;
-  margin-bottom: 5px;  align-items: center;
+  margin-bottom: 5px;  
 }
 
 .filter-bar h2 {
@@ -192,31 +194,31 @@ header .menu a:hover {
 li {
     display: flex;
     box-sizing: border-box;
-    padding: 4px 16px  ;
     border-radius: 25px;
     border: 2px solid #d9d9d9;
+    padding: 4px 10px ;
 }
 
 .filter {
   display: flex;
   align-items: center;
   flex-direction: row;
+
 }
 
 .filter i {
-   padding-right: 10px;
+   margin: 10px 8px 10px 4px ; 
 }
 
 .filter p {
     display: flex;
-   margin-top: 10px ;
-   margin-bottom: 10px;
+    margin: 10px 4px 10px 0 ;
     font-size: 17px;
     font-weight: 700;
 }
 
 .filter-bar li:hover {
-  background: linear-gradient(0deg, #deebff, #deebff);
+  background:  var(--filter-bg-color);
 }
 
 /****** info bar ***********/
@@ -448,7 +450,8 @@ footer h3 {
   .filter-bar ul {
     padding-left: 0px;
   }
-  .filter-bar .filter {
+
+  .filter-bar .filter p {
     font-size: 14px;
   }
 
@@ -576,8 +579,8 @@ header .menu a:hover {
     display: flex;
     align-items: center;
     border-radius: 15px;
-    background: #0065fc;
-    border: 2px solid #0065fc;
+    background: var(--main-color);
+    border: 2px solid var(--main-color);
     border-left: none;
     cursor: pointer;
     padding: 15px 16px;
@@ -603,12 +606,11 @@ header .menu a:hover {
  li { 
     width: 47%;
     justify-content: center;
-    padding-left:8px;
-    padding-right: 14px;
     }
 
- li .filter p {
+.filter-bar li .filter p {
     font-size: 13px;
+   
   }
 
   /****** info bar ***********/
