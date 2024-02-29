@@ -270,6 +270,8 @@ li {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  margin-top: 30px;
+
 }
 
 .hebergements-cards a {
@@ -278,7 +280,7 @@ li {
 .hebergements-cards .card {
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .hebergements-cards img {
@@ -290,33 +292,31 @@ li {
 
 .hebergements-cards .card-content {
   width: 100%;
-  height: 64px;
+  height: 68px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-left: 10px;
-  padding-bottom: 15px;
+ margin:0 8px 20px 10px;
 }
 
 .hebergements-cards .card-title {
   margin-top: 4px;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 
 .hebergements-cards .card-subtitle {
-  margin-top: 8px;
+  margin-top: 4px;
   margin-bottom: 4px;
 }
 
 .hebergements-cards .card-rating {
   margin-top: 0px;
-}
-.hebergements .show-more {
-  margin-top: 30px;
+ 
 }
 .hebergements .show-more a {
   font-size: 18px;
   font-weight: 700;
+  
 }
 
 /****** Populaires ***********/
@@ -385,6 +385,7 @@ li {
 
 .activities a {
   width: 25%;
+  height:439px;
 }
 .activities-cards .card {
   display: flex;
@@ -400,15 +401,15 @@ li {
   border-top-right-radius: 20px;
 }
 .activities-cards .card-content {
+  height:59px;
   width: 100%;
   display: flex;
   justify-content: flex-start;
-  padding-left: 19px;
+
 }
 
 .activities-cards .card-title {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin : 10px 10px 20px 10px ;
 }
 /****** footer ***********/
 footer {
@@ -458,9 +459,7 @@ footer h3 {
   .hebergements {
     width: 100%;
   }
-  .hebergements-cards .card-content {
-    padding-bottom: 5px;
-  }
+ 
   .hebergements-cards .card-title {
     font-size: 14px;
   }
@@ -492,10 +491,14 @@ footer h3 {
   .activities {
     width: 100%;
   }
-
-  .activities-cards .card img {
+.activities-cards a {
+    height:270px; }
+.activities-cards .card img {
     width: 100%;
     height: 200px;
+  }
+  .activities-cards .card-content {
+    height:70px;
   }
   .activities-cards .card-title {
     font-size: 14px;
@@ -673,6 +676,9 @@ header .menu a:hover {
   .activities a {
     width: 96%;
   }
+  .activities-cards img {
+    width: 100%;
+    height:140px;}
   /****** footer ***********/
   footer {
     display: flex;
