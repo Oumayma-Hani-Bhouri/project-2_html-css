@@ -208,12 +208,10 @@ li .filter {
   display: flex;
   align-items: center;
   flex-direction: row;
-  justify-content: center;
 }
 
 .filter i {
-    display: flex;
-    margin-right: 10px;
+    padding-right: 10px;
     
 }
 
@@ -401,6 +399,7 @@ li .filter {
   display: flex;
   flex-direction: column;
   padding: 0px;
+  justify-content: space-between;
 }
 
 .activities-cards img {
@@ -416,9 +415,9 @@ li .filter {
 }
 
 .activities-cards .card-title {
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 20px;
-  margin-left: 6px;
+ 
 }
 /****** footer ***********/
 footer {
@@ -606,14 +605,15 @@ input::placeholder {
   .filter-bar ul {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     gap: 20px 10px ;
     }
  li { 
     width: 47%;
-    padding-left: 4px;
-    padding-right: 12px;
+    padding-left: 8px;
+    padding-right: 14px;
     justify-content: center;
-    align-items: center;
+ 
 }
 .filter{
     display:flex;
