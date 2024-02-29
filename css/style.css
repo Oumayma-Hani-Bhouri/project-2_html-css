@@ -665,6 +665,7 @@ header .menu a:hover {
   /****** Activities ***********/
   .activities {
     width: 100%;
+   
   }
   .activities-cards {
     display: flex;
@@ -678,7 +679,7 @@ header .menu a:hover {
   }
   .activities-cards img {
     height:140px;
-  }
+}
   .activities-cards .card-content{
     height:59px;
   }
