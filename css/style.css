@@ -137,7 +137,6 @@ header .menu a:hover {
   font-weight: 700;
   font-size: 18px;
   outline: none;
-  overflow: hidden;
   border: 1px solid var(--main-bg-color);
   text-align: center;
   background-color: white ;
@@ -148,7 +147,7 @@ header .menu a:hover {
   font-size: 18px;
   font-weight: 700;
 }
-.form-container button  {
+.form-container .form-submit-text {
   height: 49px;
   display: flex;
   align-items: center;
@@ -163,9 +162,13 @@ header .menu a:hover {
   width:132px;
 }
 
-
-button  i { 
-    display: none;
+.form-container .form-submit-icon {
+  display: none;
+}
+.form-container .form-submit-icon i {
+  color: white;
+  width: 17px;
+  height: 17px;
 }
 
 /****** filter bar ***********/
@@ -564,11 +567,11 @@ header .menu a:hover {
     font-size: 15px;
 }
 
-button span {
+  .form-container .form-submit-text {
     display: none;
   }
 
-.form-container button  {
+  .form-container .form-submit-icon {
     height: 49px;
     width: 49px;
     display: flex;
@@ -581,12 +584,7 @@ button span {
     padding: 15px 16px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   }
-  .form-container button  i {
-    display: flex;
-    color: white;
-    width: 17px;
-    height: 17px;
-  }
+
   /****** filter bar ***********/
   .filter-bar {
     display: flex;
