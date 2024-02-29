@@ -615,14 +615,10 @@ input::placeholder {
     justify-content: center;
     align-items: center;
 }
-li .filter{
+.filter{
     display:flex;
 }
 
-.filter i {
-        display: flex;
-       margin-right: 6px;
-}
  li .filter p {
     font-size: 13px;
   }
@@ -692,10 +688,7 @@ li .filter{
   .activities a {
     width: 96%;
   }
-  .activities-cards .card img {
-    width: 100%;
- 
-  }
+
   /****** footer ***********/
   footer {
     display: flex;
