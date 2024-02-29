@@ -139,32 +139,26 @@ header .menu a:hover {
   outline: none;
   border: 1px solid var(--Grey, #f2f2f2);
   text-align: center;
-  background-color: white;
 }
 
-input::placeholder {
+::placeholder {
   color: #000;
   font-size: 18px;
   font-weight: 700;
 }
-
 .form-container .form-submit-text {
-  width:132px;
   height: 49px;
   display: flex;
   align-items: center;
   border-radius: 0px 15px 15px 0px;
-  background: var(--main-color, #0065FC);
-  border: 1px solid var(--main-color, #0065FC);
+  background: #0065fc;
+  border: 1px solid #0065fc;
   cursor: pointer;
   padding: 15px 16px;
-  
-}
-
-.form-submit-text span {
-    font-weight:700;
-    font-size: 18px;
-    color: var(--White, #FFF);
+  font-weight: 700;
+  font-size: 18px;
+  color: #f2f2f2;
+  width:132px;
 }
 
 .form-container .form-submit-icon {
@@ -180,8 +174,7 @@ input::placeholder {
 .filter-bar {
   display: flex;
   margin-top: 15px;
-  margin-bottom: 5px;
-  align-items: center;
+  margin-bottom: 5px;  align-items: center;
 }
 
 .filter-bar h2 {
@@ -201,30 +194,29 @@ li {
     box-sizing: border-box;
     padding: 4px 16px  ;
     border-radius: 25px;
-    border: 2px solid  #D9D9D9;
+    border: 2px solid #d9d9d9;
 }
 
-li .filter {
+.filter {
   display: flex;
   align-items: center;
   flex-direction: row;
 }
 
 .filter i {
-    padding-right: 10px;
-    
+   padding-right: 10px;
 }
 
 .filter p {
     display: flex;
-    margin-top: 10px ;
-    margin-bottom: 10px;
+   margin-top: 10px ;
+   margin-bottom: 10px;
     font-size: 17px;
     font-weight: 700;
 }
 
 .filter-bar li:hover {
-  background: var( --filter-bg-color, #DEEBFF);
+  background: linear-gradient(0deg, #deebff, #deebff);
 }
 
 /****** info bar ***********/
@@ -393,13 +385,12 @@ li .filter {
 
 .activities a {
   width: 25%;
- 
 }
 .activities-cards .card {
   display: flex;
   flex-direction: column;
-  padding: 0px;
   justify-content: space-between;
+  padding: 0px;
 }
 
 .activities-cards img {
@@ -412,12 +403,12 @@ li .filter {
   width: 100%;
   display: flex;
   justify-content: flex-start;
+  padding-left: 19px;
 }
 
 .activities-cards .card-title {
   margin-top: 20px;
   margin-bottom: 20px;
- 
 }
 /****** footer ***********/
 footer {
@@ -505,11 +496,9 @@ footer h3 {
   .activities-cards .card img {
     width: 100%;
     height: 200px;
-
   }
   .activities-cards .card-title {
     font-size: 14px;
-  
   }
 }
 
@@ -570,7 +559,7 @@ header .menu a:hover {
     width:100%;
   }
 
-input::placeholder {
+::placeholder {
     font-size: 15px;
 }
 
@@ -584,8 +573,8 @@ input::placeholder {
     display: flex;
     align-items: center;
     border-radius: 15px;
-    background: var(--main-color, #0065FC);
-    border: 2px solid var(--main-color, #0065FC);
+    background: #0065fc;
+    border: 2px solid #0065fc;
     border-left: none;
     cursor: pointer;
     padding: 15px 16px;
@@ -610,14 +599,10 @@ input::placeholder {
     }
  li { 
     width: 47%;
-    padding-left: 8px;
-    padding-right: 14px;
     justify-content: center;
- 
-}
-.filter{
-    display:flex;
-}
+    padding-left:8px;
+    padding-right: 14px;
+    }
 
  li .filter p {
     font-size: 13px;
@@ -660,7 +645,7 @@ input::placeholder {
   .hebergements-and-populaires .hebergements {
     width: 100%;
     padding: 20px 20px 0 20px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 1);
   }
 
   .hebergements-cards {
@@ -688,7 +673,6 @@ input::placeholder {
   .activities a {
     width: 96%;
   }
-
   /****** footer ***********/
   footer {
     display: flex;
