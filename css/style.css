@@ -147,7 +147,7 @@ header .menu a:hover {
   font-size: 18px;
   font-weight: 700;
 }
-.form-container #form-submit-text {
+.form-container .form-submit-text {
   height: 49px;
   display: flex;
   align-items: center;
@@ -162,10 +162,10 @@ header .menu a:hover {
   width:132px;
 }
 
-.form-container #form-submit-icon {
+.form-container .form-submit-icon {
   display: none;
 }
-.form-container #form-submit-icon i {
+.form-container .form-submit-icon i {
   color: white;
   width: 17px;
   height: 17px;
@@ -387,7 +387,6 @@ li {
 
 .activities a {
   width: 25%;
-  height:439px;
 }
 .activities-cards .card {
   display: flex;
@@ -494,8 +493,7 @@ footer h3 {
   .activities {
     width: 100%;
   }
-.activities-cards a {
-    height:270px; }
+
 .activities-cards .card img {
     width: 100%;
     height: 200px;
@@ -569,11 +567,11 @@ header .menu a:hover {
     font-size: 15px;
 }
 
-  .form-container #form-submit-text {
+  .form-container .form-submit-text {
     display: none;
   }
 
-  .form-container #form-submit-icon {
+  .form-container .form-submit-icon {
     height: 49px;
     width: 49px;
     display: flex;
@@ -677,6 +675,12 @@ header .menu a:hover {
 
   .activities a {
     width: 96%;
+  }
+  .activities-cards img {
+    height:140px;
+  }
+  .activities-cards .card-content{
+    height:59px;
   }
 
   /****** footer ***********/
