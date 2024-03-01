@@ -110,6 +110,7 @@ header .menu a:hover {
 .form-container {
   display: flex;
   flex-direction: row;
+  align-items: center;
   width:377px;
   height: 49px;
   box-sizing: border-box;
@@ -139,7 +140,7 @@ header .menu a:hover {
   background-color: white ;
 }
 
-::placeholder {
+.form-container input::placeholder {
   color: #000;
   font-size: 18px;
   font-weight: 700;
@@ -183,7 +184,7 @@ header .menu a:hover {
   padding-left: 15px;
 }
 
-li {
+.filter-bar ul li {
     display: flex;
     box-sizing: border-box;
     border-radius: 25px;
@@ -191,25 +192,25 @@ li {
     padding: 4px 10px ;
 }
 
-.filter {
+li .filter {
   display: flex;
   align-items: center;
   flex-direction: row;
 
 }
 
-.filter i {
+li .filter i {
    margin: 10px 8px 10px 4px ; 
 }
 
-.filter p {
+li .filter p {
     display: flex;
     margin: 10px 4px 10px 0 ;
     font-size: 17px;
     font-weight: 700;
 }
 
-.filter-bar li:hover {
+.filter-bar ul li:hover {
   background:  var(--filter-bg-color);
 }
 
@@ -271,20 +272,20 @@ li {
 .hebergements-cards a {
   width: 30%;
 }
-.hebergements-cards .card {
+.hebergements-cards  .card {
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;
 }
 
-.hebergements-cards img {
+.hebergements-cards  .card img {
   width: 100%;
   height: 124px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
 
-.hebergements-cards .card-content {
+.hebergements-cards  .card-content {
   width: 100%;
   height: 68px;
   display: flex;
@@ -552,7 +553,7 @@ header .menu a:hover {
     width:100%;
   }
 
-::placeholder {
+.form-container input::placeholder {
     font-size: 15px;
 }
 
@@ -594,7 +595,7 @@ header .menu a:hover {
     flex-direction: row;
     gap: 20px 10px ;
     }
- li { 
+ .filter-bar li { 
     width: 47%;
     justify-content: center;
     }
