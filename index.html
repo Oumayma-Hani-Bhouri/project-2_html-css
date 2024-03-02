@@ -16,11 +16,12 @@
 
   <body>
     <div class="main-container">
+        
       <header>
           <a href="index.html" class="logo-icon">
             <img src="./images/logo/Booki.png " alt="Logo-du-site">
           </a>
-        <nav>
+        <nav class="menu">
             <a href="#hebergements-section" > Hébergements </a>
             <a href="#activities-section" > Activités </a>
         </nav>
@@ -34,7 +35,8 @@
         </div>
 
        
-          <form class="form-container" id="recherche" action="#" method="get">
+          <form  id="recherche" action="#" method="get">
+            <div class="form-container" >
             <div class="form-icon">
               <label for="search-bar">
                   <i  class="fa-solid fa-location-dot"> </i>
@@ -45,35 +47,36 @@
                 type="search"
                 name="Recherche"
                 placeholder="Marseille, France">
-              <button class="form-submit-text" id="button-text"> <span> Rechercher </span> </button>
-              <button class="form-submit-icon" id="button-icon">
+              <button class="form-submit-text" > <span> Rechercher </span> </button>
+              <button class="form-submit-icon" >
                 <i class="fa-solid fa-magnifying-glass fa-lg "> </i>
               </button>
+            </div>
           </form>
        
         <div class="filter-bar">
           <h2>Filtres</h2>
           <ul>
-            <li>
-              <a href="" class="filter">
+            <li class="filter">
+              <a href="" >
                 <i class="fa-solid fa-money-bill-wave fa-lg"> </i> <p>Économique</p>
               </a>
             </li>
 
-            <li>
-              <a href="" class="filter">
+            <li class="filter">
+              <a href="" >
                 <i class="fa-solid fa-person fa-lg"> </i> <p>Familial </p>
               </a>
             </li>
 
-            <li>
-              <a href="" class="filter">
+            <li class="filter" >
+              <a href="">
                 <i class="fa-solid fa-heart fa-lg"></i> <p> Romantique </p>
               </a>
             </li>
 
-            <li>
-              <a href="" class="filter">
+            <li class="filter">
+              <a href="" >
                 <i class="fa-solid fa-fire fa-lg"> </i> <p> Nos pépites </p>
               </a>
             </li>
